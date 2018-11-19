@@ -1,0 +1,15 @@
+body {
+  font-size: 20px;
+}
+
+:root {
+  --mainColor: #ccc;
+}
+
+a {
+  color: var(--mainColor);
+}
+
+html {
+  background: #ff3333;
+}

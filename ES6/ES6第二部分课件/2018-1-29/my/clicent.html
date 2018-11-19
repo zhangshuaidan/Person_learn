@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="box">box</div>
+	<script type="text/javascript">
+		// let b = document.querySelector("#box");
+		// console.log(b);
+		// b.onmousedown=function (e) {
+		// 	console.log(e);
+		// }
+
+		// var map1 = new Map();
+		// map1.set(true,"测试");
+		// map1.set(true,"asd");
+		// map1.set({a:1,b:2},'我是对象')
+		// console.log(map1)
+		// console.info(	map1.get(true))
+		
+		// function fn(...args) {
+		// 	console.log(...args);
+		// 	// body...
+		// }
+		// console.log(fn`你好`)
+
+		// let  obj ={
+		// 	name:"tim_zsd",
+		// 	age:19,
+		// }
+		// let newObj = new Proxy(obj,{
+		// 	get(obj,aa){
+		// 		console.log(aa)
+		// 		return '我是代理'
+		// 	}
+		// })
+		// console.log(newObj.name)
+
+		let arr =[
+			{
+				id:1,
+				name:'zsd',
+				age:18,
+				height:175,
+			},{
+				id:2,
+				name:'jmh',
+				age:18,
+				height:162,
+			},{
+				id:3,
+				name:'ming',
+				age:19,
+				height:170,
+			},{
+				id:4,
+				name:'hong',
+				age:20,
+				height:150,
+			}
+		];
+		let obj = {
+			id:3,
+			name:"不告诉你",
+			age:"你猜",
+			height:"很高"
+		}
+
+		// let  arr2=arr.map(v=>{
+		// 	if(v.id==obj.id){
+		// 		return obj
+		// 	}else{
+		// 		return v
+		// 	}
+		// }	
+		// )
+
+		let  arr2=arr.forEach(v=>{
+			if(v.id==obj.id){
+				return obj
+				// v=obj
+			}
+		}	
+		)
+
+		// for (var i = arr.length - 1; i >= 0; i--) {
+		// 	if(arr[i].id===obj.id){
+		// 		arr[i]=obj
+		// 	}
+		// }
+			
+
+		console.log("myarr",arr);
+		console.log("arr2",arr2);
+
+	</script>
+</body>
+</html>
